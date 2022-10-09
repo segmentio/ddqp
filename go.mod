@@ -14,3 +14,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
+replace github.com/jonwinton/ddqp => github.com/segmentio/ddqp v0.0.0-20221009064724-798e2b60fa9f
