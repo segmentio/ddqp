@@ -1,4 +1,4 @@
-module github.com/jonwinton/ddqp
+module github.com/segmentio/ddqp
 
 go 1.19
 
@@ -13,5 +13,3 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/jonwinton/ddqp => github.com/segmentio/ddqp v0.0.0-20221009064724-798e2b60fa9f

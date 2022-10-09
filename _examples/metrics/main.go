@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/alecthomas/repr"
-	"github.com/jonwinton/ddqp"
+	"github.com/segmentio/ddqp"
 )
 
 func main() {

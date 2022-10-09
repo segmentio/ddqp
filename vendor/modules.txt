@@ -18,4 +18,3 @@ github.com/stretchr/testify/require
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
-# github.com/jonwinton/ddqp => github.com/segmentio/ddqp v0.0.0-20221009064724-798e2b60fa9f
