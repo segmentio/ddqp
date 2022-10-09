@@ -20,6 +20,7 @@ type SimpleFilter struct {
 	FilterKey       string           `@Ident`
 	FilterSeparator *FilterSeparator `@@`
 	FilterValue     *FilterValue     `@@`
+	FilterVariable  *string          `| "$"? @Ident ( @"." @Ident )*`
 }
 
 type GroupedFilter struct {
@@ -47,4 +48,5 @@ type Value struct {
 	Identifier *string  `| "!"? @Ident ( @"." @Ident )*`
 	String     *string  `| @(String)`
 	Number     *float64 `| @(Float|Int)`
+	Variable   *string  `| "$"? @Ident ( @"." @Ident )*`
 }

@@ -22,6 +22,7 @@ type Query struct {
 	Function   []*Function   `( @@ ( "." @@ )* )?`
 	By         string        `Ident`
 	Grouping   []string      `"{" ( @Ident ( "," @Ident )* )? "}"`
+	As         []*Function   `( @@ ( "." @@ )* )?`
 }
 type Filter struct {
 	Key   string `@Ident ":"`
@@ -29,6 +30,11 @@ type Filter struct {
 }
 type Function struct {
 	Name string          `"." @Ident`
+	Args []*FunctionArgs `"(" ( @@ ( "," @@ )* )? ")"`
+}
+
+type As struct {
+	Name string          `"." "as" @Ident`
 	Args []*FunctionArgs `"(" ( @@ ( "," @@ )* )? ")"`
 }
 
